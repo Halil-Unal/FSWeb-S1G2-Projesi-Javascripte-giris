@@ -102,10 +102,13 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function kopeginYasi(yas){
+  yas=yas*7
 
+  console.log("köpek yasi", yas);
+  return yas;
+}
+kopeginYasi(2);
 
 
 /* Görev 3 */
@@ -152,9 +155,13 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamlayın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(km){
+
+  km=km*0.62
+  console.log(km,"değeri olur");
+  return km;
 }
+milDonusturucu(17);
 
 
 
@@ -168,9 +175,12 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm){
+  cm=cm*0.03 
+  console.log(cm,"değeri olur");
+  return cm;
 }
+feetDonusturucu(15);
 
 
 
@@ -207,10 +217,24 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
-}
+function notHesapla(not){
+  if (90<not<100){
+    console.log("A aldin",not)
+  }
+  else if (80<not<90){
+    console.log("B ALDİN",not);
 
+  }
+  else if (70<not<80){
+    console.log("c ALDİN",not);
+    
+}
+else {
+  console.log("F ALDIN",not);
+  return not;
+}
+}
+notHesapla(85);
 
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
