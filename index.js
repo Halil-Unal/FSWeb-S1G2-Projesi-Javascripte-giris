@@ -46,7 +46,7 @@ let sayi1= 15;
 let sayi2= 18;
 if (sayi1<sayi2){
   
- console.log (sayi1=sayi1+1);
+ console.log (sayi1=sayi1+3);
   
 }
 
@@ -67,9 +67,10 @@ Aşağıdakileri yapın:
 const name=('ahmet');
 console.log (name.length);
 
-var sayi=1999;
-console.log(typeof sayi); 
-console.log(sayi);
+const stringSayi="1999";
+const numberSayi = Number(stringSayi);
+console.log(stringSayi);
+console.log(numberSayi);
 
 
 /*
